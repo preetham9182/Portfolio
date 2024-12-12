@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Layout</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="resume-layout-wrapper">
+        <header>
+            <button id="menu-toggle">Menu</button>
+            <nav>
+                <ul class="nav-list" id="nav-list">
+                    <li><a href="#objective">Objective</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#blogs">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="objective" class="career-objective">
+            <div class="profile-pic">
+                <img src="./assets/profile-icon.png" alt="Profile Picture">
+                <div class="name">BOMMA PREETHAM</div>
+            </div>
+            <div class="objective-content">
+                <h2 class="career-objective-text">Career Objective:</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+        </section>
+
+        <section id="experience" class="work-experience">
+            <h2 class="work-experience-text">Work Experience</h2>
+            <div class="experience-container">
+                <div class="company">
+                    <h3 class="company-name">Company1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="company">
+                    <h3 class="company-name">Company2</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <h2 class="projects-text">Projects</h2>
+            <div class="projects-container">
+                <div class="project">
+                    <div class="album-wrapper">
+                        <img src="./assets/album.png" class="album-icon" alt="Project Image">
+                    </div>
+                    <h3 class="project-title-text">Project1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                </div>
+                <div class="project">
+                    <div class="album-wrapper">
+                        <img src="./assets/album.png" class="album-icon" alt="Project Image">
+                    </div>
+                    <h3 class="project-title-text">Project2</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                </div>
+                <div class="project">
+                    <div class="album-wrapper">
+                        <img src="./assets/album.png" class="album-icon" alt="Project Image">
+                    </div>
+                    <h3 class="project-title-text">Project3</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="education-skills">
+            <div class="education">
+                <h2>Education</h2>
+                <p class="education-list">B.tech</p>
+                <p class="education-list">M.tech</p>
+                <p class="education-list">PhD</p>
+            </div>
+            <div class="skills">
+                <h2>Skills</h2>
+                <p class="education-list">Python</p>
+                <p class="education-list">JAVA</p>
+                <p class="education-list">React</p>
+            </div>
+        </section>
+
+        <section id="blogs" class="blogs">
+            <h2 class="blogs-text">Blogs</h2>
+            <div class="blogs-cont">
+                <div class="blog">
+                    <img src="./assets/album.png" class="blog-image" alt="Blog Image">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="blog">
+                    <img src="./assets/album.png" class="blog-image" alt="Blog Image">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+        </section>
+
+        <footer id="contact">
+            <h2>Contact</h2>
+            <div class="social-media-icons">
+                <a href="#"><img class="social-media" src="./assets/instagram.png" alt="Instagram"></a>
+                <a href="#"><img class="social-media" src="./assets/linkedin.png" alt="LinkedIn"></a>
+                <a href="#"><img class="social-media" src="./assets/github.webp" alt="GitHub"></a>
+                <a href="#"><img class="social-media" src="./assets/whatsapp.png" alt="WhatsApp"></a>
+            </div>
+        </footer>
+        
+        <script>
+            const menuToggle = document.getElementById('menu-toggle');
+            const navList = document.getElementById('nav-list');
+    
+            menuToggle.addEventListener('click', () => {
+                if (navList.style.display === 'block') {
+                    navList.style.display = 'none';
+                } else {
+                    navList.style.display = 'block';
+                }
+            });
+        </script>
+    </div>
+</body>
+</html>
